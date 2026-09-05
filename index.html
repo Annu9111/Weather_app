@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="weather-card">
+
+            <h1>Weather App</h1>
+
+            <p class="subtitle">
+                Check the current weather of any city
+            </p>
+
+            <!-- Search -->
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Enter city name..."
+                >
+
+                <button id="searchBtn">
+                    Search
+                </button>
+
+            </div>
+
+            <p id="errorMessage"></p>
+
+            <!-- Loading -->
+            <p id="loading">Loading...</p>
+
+            <!-- Weather Information -->
+            <div id="weatherInfo" class="weather-info">
+
+                <div class="location">
+                    <h2 id="cityName">--</h2>
+                    <p id="countryName">--</p>
+                </div>
+
+                <div class="weather-main">
+
+                    <div id="weatherIcon" class="weather-icon">
+                        ☀️
+                    </div>
+
+                    <div>
+                        <div class="temperature">
+                            <span id="temperature">--</span>°C
+                        </div>
+
+                        <p id="weatherDescription">
+                            --
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Weather Details -->
+
+                <div class="details">
+
+                    <div class="detail-box">
+                        <span>🌡️</span>
+                        <p>Feels Like</p>
+                        <strong>
+                            <span id="feelsLike">--</span>°C
+                        </strong>
+                    </div>
+
+                    <div class="detail-box">
+                        <span>💧</span>
+                        <p>Humidity</p>
+                        <strong>
+                            <span id="humidity">--</span>%
+                        </strong>
+                    </div>
+
+                    <div class="detail-box">
+                        <span>💨</span>
+                        <p>Wind Speed</p>
+                        <strong>
+                            <span id="windSpeed">--</span> km/h
+                        </strong>
+                    </div>
+
+                </div>
+
+                <p class="updated">
+                    Last updated: <span id="updatedTime">--</span>
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
